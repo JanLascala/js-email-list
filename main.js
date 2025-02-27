@@ -8,7 +8,7 @@ fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
         console.log(data.response);
 
         // extract this data somehow
-        const [emailvalue] = data.response
+        const emailvalue = data.response;
         console.log(emailvalue)
     })
 
