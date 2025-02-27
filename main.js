@@ -1,6 +1,14 @@
 console.log("work")
-const emailEl = document.querySelectorAll(`.email`)
-const buttonEl = document.querySelector(`.btn`)
+const listEl = document.querySelectorAll(".li");
+const buttonEl = document.querySelector(`.btn`);
+const test = document.querySelectorAll(".boing");
+
+test.innerText = "tot";
+
+for (let i = 0; i < test.lenght; i++) {
+    test[i].innerText = "test test";
+
+}
 
 fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
     .then(response => response.json())
@@ -10,6 +18,8 @@ fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
         // extract this data somehow
         const emailvalue = data.response;
         console.log(emailvalue)
+
+        listEl.innerText = `emailvalue`;
     })
 
     .catch(Error => {
@@ -18,6 +28,9 @@ fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
 
 
     })
+
+
+
 
 
 //multiply it ten times or generate it ten times
