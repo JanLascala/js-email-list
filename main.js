@@ -1,5 +1,6 @@
 console.log("work")
-
+const emailEl = document.querySelectorAll(`.email`)
+const buttonEl = document.querySelector(`.btn`)
 
 fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
     .then(response => response.json())
