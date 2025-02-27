@@ -1,5 +1,5 @@
 console.log("work")
-const listEl = document.querySelectorAll(".li");
+const listEl = document.querySelectorAll(".email");
 console.log(listEl)
 const buttonEl = document.querySelector(`.btn`);
 
@@ -26,9 +26,20 @@ fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
 let inner = []
 
 for (let i = 0; i < listEl.length; i++) {
+    fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.response);
 
-    inner.push(fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
-    )
+            // extract this data somehow
+            const emailvalue = data.response;
+            console.log(emailvalue)
+
+            listEl[i].innerHTML = emailvalue;
+
+
+        })
+
 }
 
 
