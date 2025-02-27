@@ -44,7 +44,11 @@ for (let i = 0; i < listEl.length; i++) {
 
 
 
-
+buttonEl.addEventListener("click", function () {
+    listEl.forEach(email => {
+        email.innerHTML = "";
+    });
+});
 
 //multiply it ten times or generate it ten times
 
