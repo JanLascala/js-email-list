@@ -5,17 +5,22 @@ const buttonEl = document.querySelector(`.btn`)
 fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        console.log(data.response);
+
+        // extract this data somehow
+        const [emailvalue] = data.response
+        console.log(emailvalue)
     })
 
     .catch(Error => {
 
         console.error(error);
+
+
     })
-// extract this data somehow
 
 
-//multiply it ten times or generate it ten times 
+//multiply it ten times or generate it ten times
 
 
 //link it to the front of html as "list?"
@@ -29,13 +34,3 @@ fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
 
 
 
-fetch("https://flynn.boolean.careers/exercises/api/random/int")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
-
-    .catch(Error => {
-
-        console.error(error);
-    })
