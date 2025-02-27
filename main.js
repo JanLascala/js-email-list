@@ -11,8 +11,20 @@ fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
 
         console.error(error);
     })
+// extract this data somehow
 
 
+//multiply it ten times or generate it ten times 
+
+
+//link it to the front of html as "list?"
+
+
+
+//bonus link this to a button
+
+
+//at every press reset and generate new 
 
 
 
