@@ -27,7 +27,8 @@ let inner = []
 
 for (let i = 0; i < listEl.length; i++) {
 
-    inner.push(fetch(emailvalue))
+    inner.push(fetch(`https://flynn.boolean.careers/exercises/api/random/mail`)
+    )
 }
 
 
